@@ -1,0 +1,13 @@
+/* https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
+
+
+* {
+    background-color: #354F52;
+    color: #CAD2C5;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    padding: 15px;
+    font-size: 45px;
+}
