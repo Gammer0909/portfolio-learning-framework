@@ -38,24 +38,10 @@ nav a {
     padding: 0;
 }
 
-.bio-card {
-    display: flex;               /* optional, only if you want content inside aligned horizontally */
-    flex-direction: column;      /* stack content vertically */
-    background-color: #CAD2C5;  /* card background */
-    color: #2F3E46;              /* text color inside the card */
-    padding: 20px;               /* spacing inside the card */
-    border-radius: 12px;         /* rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
-    max-width: 400px;            /* optional width constraint */
-    margin: 20px auto;           /* center horizontally with spacing */
+nav a:visited {
+    color:#CAD2C5;
 }
 
-.img-card {
-    border: 5px solid red;
-    display: flex;
-}
-
-.text-card {
-    display: flex;
-    min-height: 50px;
+nav a:active {
+    color:#84A98C;
 }
