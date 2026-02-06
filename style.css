@@ -2,12 +2,60 @@
 
 
 * {
-    background-color: #354F52;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2F3E46;
     color: #CAD2C5;
     font-family: "Inter", sans-serif;
 }
 
+
 h1 {
     padding: 15px;
-    font-size: 45px;
+    font-size: 55px;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #CAD2C5, #84A98C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a {
+    font-size: 35px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.bio-card {
+    display: flex;               /* optional, only if you want content inside aligned horizontally */
+    flex-direction: column;      /* stack content vertically */
+    background-color: #CAD2C5;  /* card background */
+    color: #2F3E46;              /* text color inside the card */
+    padding: 20px;               /* spacing inside the card */
+    border-radius: 12px;         /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    max-width: 400px;            /* optional width constraint */
+    margin: 20px auto;           /* center horizontally with spacing */
+}
+
+.img-card {
+    border: 5px solid red;
+    display: flex;
+}
+
+.text-card {
+    display: flex;
+    min-height: 50px;
 }
