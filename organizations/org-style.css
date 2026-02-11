@@ -24,6 +24,8 @@ h1 {
     color: transparent;
 }
 
+
+
 nav {
     display: flex;
     align-items: baseline;
@@ -36,7 +38,17 @@ nav a {
     display: flex;
     margin: 0;
     padding: 0;
+    color: #CAD2C5 
 }
+
+/* nav a .brand {
+    text-decoration: none;
+}
+
+nav a.nav-link {
+    text-decoration: underline;
+} */
+
 
 nav a:visited {
     color:#CAD2C5;
@@ -46,8 +58,7 @@ nav a:active {
     color:#84A98C;
 }
 
-
-.bio-card {
+.org-card {
     display: flex;               
     flex-direction: column;     
     background-color: #CAD2C5;  
@@ -56,10 +67,48 @@ nav a:active {
     border-radius: 12px;        
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     max-width: 90%;            
-    margin: 20px auto;           
+    margin: 20px auto;
+    gap: 15px;        
 }
 
-.bio-content {
+.org-card h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.org-card .prof-org {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #84A98C;
+    border-radius: 12px;
+    gap: 15px;
+}
+
+.org-card .social-org {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #84A98C;
+    border-radius: 12px;
+    gap: 15px;
+}
+
+.org-card a {
+    margin: 0;
+    padding: 0;
+    color: #2F3E46; 
+}
+
+.org-card a:visited {
+    color:#2F3E46;
+}
+
+.org-card a:active {
+    color:#84A98C;
+}
+
+.card-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -67,33 +116,32 @@ nav a:active {
 }
 
 .img-card {
-
-    background-color: #84A98C;
-    border: 6px solid #84A98C;
+    background-color: #52796F;
+    border: 6px solid #52796F;
     border-radius: 12px;
 
-    width: 292px;
-    height: auto;
-    display: flex;
+    width: 256px;
+    height: 256;
+    box-sizing: border-box;
 }
 
 .img-card img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    display: flex;
+    object-fit: fill;
     border-radius: 8px; /* slightly smaller than parent so border shows */
 }
 
-
 .text-card {
 
-    width: 400px;
+    width: 30%;
 
-    max-height: 700px;
+    max-height: 400px;
     overflow-y: auto;
     padding-right: 10px;
 
-    background-color: #84A98C;
+    background-color: #52796F;
     border-radius: 12px;
 
     text-align: left;

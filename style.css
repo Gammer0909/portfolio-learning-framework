@@ -24,6 +24,8 @@ h1 {
     color: transparent;
 }
 
+
+
 nav {
     display: flex;
     align-items: baseline;
@@ -36,7 +38,17 @@ nav a {
     display: flex;
     margin: 0;
     padding: 0;
+    color: #CAD2C5 
 }
+
+/* nav a .brand {
+    text-decoration: none;
+}
+
+nav a.nav-link {
+    text-decoration: underline;
+} */
+
 
 nav a:visited {
     color:#CAD2C5;
