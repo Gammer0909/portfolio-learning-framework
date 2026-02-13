@@ -58,11 +58,12 @@ nav a:active {
     color:#84A98C;
 }
 
+/* REFACTOR THIS TO MAKE THE MAIN CARD ONE CLASS TS IS HORRIBLE TO SCALE */
+
 .org-card {
     display: flex;               
     flex-direction: column;     
-    background-color: #CAD2C5;  
-    color: #2F3E46;              
+    background-color: #CAD2C5;           
     padding: 15px;
     border-radius: 12px;        
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -74,6 +75,7 @@ nav a:active {
 .org-card h2 {
     padding: 0px;
     margin: 0px;
+    color: #2F3E46;
 }
 
 .org-card .prof-org {
@@ -86,6 +88,15 @@ nav a:active {
 }
 
 .org-card .social-org {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #84A98C;
+    border-radius: 12px;
+    gap: 15px;
+}
+
+.org-card .podcast {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -142,9 +153,11 @@ nav a:active {
     padding-right: 10px;
 
     background-color: #52796F;
+    color: #CAD2C5;
     border-radius: 12px;
 
     text-align: left;
+    font-size: 18px;
 
     flex: 1;
     line-height: 1.6;
