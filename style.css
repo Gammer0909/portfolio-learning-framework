@@ -155,6 +155,7 @@ footer .contact {
 }
 
 footer .contact a {
+    text-decoration: none;
     color: #1D9E75;
 }
 
