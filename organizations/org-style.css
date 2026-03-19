@@ -1,169 +1,194 @@
-/* https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
-
-
 * {
     box-sizing: border-box;
 }
 
-body {
-    background-color: #2F3E46;
-    color: #CAD2C5;
-    font-family: "Inter", sans-serif;
+html, body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-
-
-h1 {
-    padding: 15px;
-    font-size: 55px;
-}
-
-.gradient-text {
-    background: linear-gradient(to right, #CAD2C5, #84A98C);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-
 
 nav {
+    background-color: #2C2C2A;
     display: flex;
     align-items: baseline;
     align-items: center;
     gap: 50px;
+    border-bottom: 4px solid #1D9E75;
+    padding-left: 20px;
+}
+
+nav h1 {
+    padding: 10px;
+    display: flex;
+}
+
+nav h1 a {
+    color: #9FE1CB;
+    font-size: 36px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+nav h1 a:hover {
+    color:#1D9E75;
+}
+
+nav h1 a:active {
+    color:#0F6E56;
 }
 
 nav a {
-    font-size: 35px;
+    font-size: 20px;
     display: flex;
     margin: 0;
     padding: 0;
-    color: #CAD2C5 
-}
-
-/* nav a .brand {
+    color: #1D9E75;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-nav a.nav-link {
-    text-decoration: underline;
-} */
-
-
-nav a:visited {
-    color:#CAD2C5;
+nav a:hover {
+    color:#9FE1CB;
 }
 
 nav a:active {
-    color:#84A98C;
+    color:#0F6E56;
 }
 
-/* REFACTOR THIS TO MAKE THE MAIN CARD ONE CLASS TS IS HORRIBLE TO SCALE */
-
-.org-card {
-    display: flex;               
-    flex-direction: column;     
-    background-color: #CAD2C5;           
+.main {
+    padding-top: 1px;
+    margin-top: 0;
+    min-height: 100%;
+    background-color: #e4e8e8;
     padding: 15px;
-    border-radius: 12px;        
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    max-width: 90%;            
-    margin: 20px auto;
-    gap: 15px;        
+    align-items: center;
 }
 
-.org-card h2 {
-    padding: 0px;
-    margin: 0px;
-    color: #2F3E46;
+.main .teal {
+    color: #1D9E75;
+    font-weight: 900;
+    font-style: italic;
 }
 
-.org-card .prof-org {
+.main h1 {
+    color: #2C2C2A;
+    font-size: 30px;
+}
+
+.main h1 a {
+    color: #1D9E75;
+    font-size: 36px;
     display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: #84A98C;
-    border-radius: 12px;
-    gap: 15px;
-}
-
-.org-card .social-org {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: #84A98C;
-    border-radius: 12px;
-    gap: 15px;
-}
-
-.org-card .podcast {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: #84A98C;
-    border-radius: 12px;
-    gap: 15px;
-}
-
-.org-card a {
     margin: 0;
     padding: 0;
-    color: #2F3E46; 
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
 
-.org-card a:visited {
-    color:#2F3E46;
+.main h1 a:hover {
+    color:#9FE1CB;
 }
 
-.org-card a:active {
-    color:#84A98C;
+.main h1 a:active {
+    color:#0F6E56;
 }
 
-.card-content {
+.main h2 {
+    color: #2C2C2A;
+    font-size: 24px;
+}
+
+.main img {
+    border: 3px solid #1D9E75;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.main p {
+    color: #444441;
+    font-size: 16px;
+}
+
+.main a {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #1D9E75;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.main a:hover {
+    color:#9FE1CB;
+}
+
+.main a:active {
+    color:#0F6E56;
+}
+
+.main .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f7f7;
+    border: 3px solid #9FE1CB;
+    border-radius: 15px;
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgba(88, 87, 80, 0.25);
+
+}
+
+.main .card .card-content {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 15px;
+    padding: 15px;    
 }
 
-.img-card {
-    background-color: #52796F;
-    border: 6px solid #52796F;
-    border-radius: 12px;
-
-    width: 256px;
-    height: 256;
-    box-sizing: border-box;
-}
-
-.img-card img {
-    width: 100%;
-    height: 100%;
+footer {
+    border-top: 4px solid #1D9E75;;
+    padding-top: 1px;
+    margin-top: 0;
+    background-color: #444441;
     display: flex;
-    object-fit: fill;
-    border-radius: 8px; /* slightly smaller than parent so border shows */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
 }
 
-.text-card {
-
-    width: 30%;
-
-    max-height: 400px;
-    overflow-y: auto;
-    padding-right: 10px;
-
-    background-color: #52796F;
-    color: #CAD2C5;
-    border-radius: 12px;
-
-    text-align: left;
-    font-size: 18px;
-
-    flex: 1;
-    line-height: 1.6;
-    overflow-wrap: break-word;
+footer .contact {
+    font-size: 16px;
+    padding: 15px;
+    color: #e4e8e8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
-.text-card p {
-    padding-left: 10px;
+footer .contact a {
+    color: #1D9E75;
+}
+
+footer a:hover {
+    color:#9FE1CB;
+}
+
+footer a:active {
+    color:#0F6E56;
+}
+
+footer p {
+    font-size: 16px;
+    color: #e4e8e8;
 }

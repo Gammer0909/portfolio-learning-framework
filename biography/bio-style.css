@@ -1,112 +1,160 @@
-/* https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
-
-
 * {
     box-sizing: border-box;
 }
 
-body {
-    background-color: #2F3E46;
-    color: #CAD2C5;
-    font-family: "Inter", sans-serif;
-}
-
-
-h1 {
-    padding: 15px;
-    font-size: 55px;
-}
-
-.gradient-text {
-    background: linear-gradient(to right, #CAD2C5, #84A98C);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+html, body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 nav {
+    background-color: #2C2C2A;
     display: flex;
     align-items: baseline;
     align-items: center;
     gap: 50px;
+    border-bottom: 4px solid #1D9E75;
+    padding-left: 20px;
 }
 
-nav a {
-    font-size: 35px;
+nav h1 {
+    padding: 10px;
+    display: flex;
+}
+
+nav h1 a {
+    color: #9FE1CB;
+    font-size: 36px;
     display: flex;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
 
-nav a:visited {
-    color:#CAD2C5;
+nav h1 a:hover {
+    color:#1D9E75;
+}
+
+nav h1 a:active {
+    color:#0F6E56;
+}
+
+nav a {
+    font-size: 20px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: #1D9E75;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color:#9FE1CB;
 }
 
 nav a:active {
-    color:#84A98C;
+    color:#0F6E56;
 }
 
-
-.bio-card {
-    display: flex;               
-    flex-direction: column;     
-    background-color: #CAD2C5;           
+.main {
+    padding-top: 1px;
+    margin-top: 0;
+    min-height: 100%;
+    background-color: #e4e8e8;
     padding: 15px;
-    border-radius: 12px;        
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    max-width: 90%;            
-    margin: 20px auto;           
+    align-items: center;
 }
 
-.bio-card h2 {
-    color: #2F3E46;
+.main .teal {
+    color: #1D9E75;
+    font-weight: 900;
 }
 
-.bio-content {
+.main h1 {
+    color: #2C2C2A;
+    font-size: 30px;
+}
+
+.main h2 {
+    color: #2C2C2A;
+    font-size: 24px;
+}
+
+.main p {
+    color: #444441;
+    font-size: 16px;
+}
+
+.main a {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #1D9E75;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.main a:hover {
+    color:#9FE1CB;
+}
+
+.main a:active {
+    color:#0F6E56;
+}
+
+.main .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f7f7;
+    border: 3px solid #9FE1CB;
+    border-radius: 15px;
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgba(88, 87, 80, 0.25);
+}
+
+footer {
+    border-top: 4px solid #1D9E75;;
+    padding-top: 1px;
+    margin-top: 0;
+    background-color: #444441;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+footer .contact {
+    font-size: 16px;
+    padding: 15px;
+    color: #e4e8e8;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.img-card {
-
-    background-color: #84A98C;
-    border: 6px solid #84A98C;
-    border-radius: 12px;
-
-    width: 292px;
-    height: auto;
-    display: flex;
-}
-
-.img-card img {
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px; /* slightly smaller than parent so border shows */
 }
 
-
-.text-card {
-
-    width: 400px;
-
-    max-height: 700px;
-    overflow-y: auto;
-    padding-right: 10px;
-
-    background-color: #84A98C;
-    color: #CAD2C5;
-    border-radius: 12px;
-
-    text-align: left;
-
-    flex: 1;
-    line-height: 1.6;
-    overflow-wrap: break-word;
+footer .contact a {
+    color: #1D9E75;
 }
 
-.text-card p {
-    padding-left: 10px;
+footer a:hover {
+    color:#9FE1CB;
+}
+
+footer a:active {
+    color:#0F6E56;
+}
+
+footer p {
+    font-size: 16px;
+    color: #e4e8e8;
 }
