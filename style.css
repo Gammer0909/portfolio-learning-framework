@@ -92,6 +92,10 @@ nav a:active {
     font-size: 24px;
 }
 
+.main h2 a {
+    font-size: 24px;
+}
+
 .main p {
     color: #444441;
     font-size: 16px;
@@ -117,6 +121,7 @@ nav a:active {
 .main .card {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     background-color: #f4f7f7;
     border: 3px solid #9FE1CB;
     border-radius: 15px;
@@ -124,6 +129,12 @@ nav a:active {
     height: 30%;
     padding: 15px;
     box-shadow: 8px 8px 8px rgba(88, 87, 80, 0.25);
+}
+
+.main .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .profile {
@@ -138,6 +149,12 @@ nav a:active {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #9FE1CB;
+}
+
+.main img {
+    padding: 15px;
+    width: 30%;
+    height: 30%;
 }
 
 footer {

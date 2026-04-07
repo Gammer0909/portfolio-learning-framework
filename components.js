@@ -8,6 +8,8 @@ class Header extends HTMLElement {
             <a href="/biography/index.html">Biography</a>
             <a href="/organizations/index.html">Organizations</a>
             <a href="/resume/index.html">Resume</a>
+			<a href="/education/index.html">Education</a>
+			<a href="/recommendations/index.html">Recommendations</a>
         </nav>
         `
     }
