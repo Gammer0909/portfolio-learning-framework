@@ -137,6 +137,11 @@ nav a:active {
     justify-content: space-evenly;
 }
 
+.main .third {
+    width: 30%;
+    height: auto;
+}
+
 .profile {
     display: flex;
     align-items: center;
@@ -153,8 +158,14 @@ nav a:active {
 
 .main img {
     padding: 15px;
-    width: 30%;
+    object-fit: cover;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.main .small {
     height: 30%;
+    width: 30%;
 }
 
 footer {

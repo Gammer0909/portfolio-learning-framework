@@ -10,6 +10,7 @@ class Header extends HTMLElement {
             <a href="/resume/index.html">Resume</a>
 			<a href="/education/index.html">Education</a>
 			<a href="/recommendations/index.html">Recommendations</a>
+			<a href="/skills-experience/index.html">Skills</a>
         </nav>
         `
     }
