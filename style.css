@@ -159,8 +159,6 @@ nav a:active {
 .main img {
     padding: 15px;
     object-fit: cover;
-    border: 1px solid transparent;
-    border-radius: 15px;
 }
 
 .main .small {
